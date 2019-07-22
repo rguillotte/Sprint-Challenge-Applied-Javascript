@@ -20,7 +20,13 @@
 
 axios.get('https://lambda-times-backend.herokuapp.com/articles')
     .then(data=>{
-        // console.log(data);
+        console.log(data);
+
+        // const dataSet = data.data.articles;
+        // console.log(dataSet);
+
+        // const dataKeys = Object.keys(data.data.articles);
+        // console.log(dataKeys);
 
         const bootstrapInfo = data.data.articles.bootstrap;
         bootstrapInfo.forEach((i=>{
